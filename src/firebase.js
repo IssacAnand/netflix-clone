@@ -3,7 +3,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore"; // Import Firestore
 import "firebase/compat/auth"; // Import Auth
-// import dotenv from "dotenv";
+
 
 
 const firebaseConfig = {

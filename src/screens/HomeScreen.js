@@ -47,10 +47,10 @@ function HomeScreen() {
     fetchUrl = {requests.fetchComedyMovies}
      />
 
-{/* <Row
+<Row
     title="Documentary"
     fetchUrl = {requests.fetchDocumentaries}
-     /> */}
+     />
 
 <Row
     title="Horror"
