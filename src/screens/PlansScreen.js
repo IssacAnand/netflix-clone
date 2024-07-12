@@ -12,8 +12,7 @@ function PlansScreen() {
     const [subscription,setSubscription] = useState(null);
 
     useEffect(()=>{
-        db.collection("customers").doc(user.uid).collection("subscriptions").
-        get().then(querySnapshot =>{
+        db.collection("customers").doc(user.uid).collection("subscriptions").get().then(querySnapshot =>{
             querySnapshot.forEach(async subscription=>{
                 setSubscription({
                     role:subscription.data().role,
@@ -44,7 +43,7 @@ function PlansScreen() {
         });
     },[]);
 
-    console.log(products);
+    // console.log(products);
     const loadCheckout = async (priceId) =>{
         const docRef= await db.collection("customers").doc(user.uid).collection("checkout_sessions")
         .add({
