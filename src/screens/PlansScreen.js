@@ -4,7 +4,7 @@ import db from '../firebase';
 import { useSelector } from 'react-redux';
 import {selectUser} from '../features/userSlice'
 import {loadStripe} from "@stripe/stripe-js";
-import { current } from '@reduxjs/toolkit';
+
 
 function PlansScreen() {
     const[products,setProducts]=useState([]);
