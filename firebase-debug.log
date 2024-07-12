@@ -1,0 +1,109 @@
+[debug] [2024-07-12T06:42:35.986Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T06:42:35.988Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\issac\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-12T06:42:35.988Z] CLI Version:   13.13.1
+[debug] [2024-07-12T06:42:35.988Z] Platform:      win32
+[debug] [2024-07-12T06:42:35.988Z] Node Version:  v20.13.1
+[debug] [2024-07-12T06:42:35.988Z] Time:          Fri Jul 12 2024 14:42:35 GMT+0800 (Singapore Standard Time)
+[debug] [2024-07-12T06:42:35.989Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T06:42:36.032Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T06:42:36.033Z] > authorizing via signed-in user (issacanand21@gmail.com)
+[debug] [2024-07-12T06:42:36.033Z] [iam] checking project netflix-clone-139eb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-12T06:42:36.034Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-139eb:testIamPermissions [none]
+[debug] [2024-07-12T06:42:36.034Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-139eb:testIamPermissions x-goog-quota-user=projects/netflix-clone-139eb
+[debug] [2024-07-12T06:42:36.034Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-139eb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-12T06:42:36.284Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-139eb:testIamPermissions 401
+[debug] [2024-07-12T06:42:36.284Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-139eb:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"cloudresourcemanager.googleapis.com","method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions"}}]}}
+[debug] [2024-07-12T06:42:36.285Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-07-12T06:42:36.285Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb [none]
+[debug] [2024-07-12T06:42:36.380Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb 401
+[debug] [2024-07-12T06:42:36.380Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-07-12T06:42:36.381Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-07-12T06:42:46.600Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T06:42:46.602Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\issac\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-12T06:42:46.602Z] CLI Version:   13.13.1
+[debug] [2024-07-12T06:42:46.602Z] Platform:      win32
+[debug] [2024-07-12T06:42:46.602Z] Node Version:  v20.13.1
+[debug] [2024-07-12T06:42:46.603Z] Time:          Fri Jul 12 2024 14:42:46 GMT+0800 (Singapore Standard Time)
+[debug] [2024-07-12T06:42:46.603Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T06:42:46.647Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T06:42:46.647Z] > authorizing via signed-in user (issacanand21@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\issac\netflix-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-12T06:42:59.177Z] Using project from CLI flag: netflix-clone-139eb
+[debug] [2024-07-12T06:42:59.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb [none]
+[debug] [2024-07-12T06:42:59.280Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb 401
+[debug] [2024-07-12T06:42:59.280Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-07-12T06:42:59.280Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-07-12T06:42:59.281Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\issac\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\issac\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project netflix-clone-139eb. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-07-12T06:44:44.158Z] ----------------------------------------------------------------------
+[debug] [2024-07-12T06:44:44.160Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\issac\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-12T06:44:44.160Z] CLI Version:   13.13.1
+[debug] [2024-07-12T06:44:44.160Z] Platform:      win32
+[debug] [2024-07-12T06:44:44.160Z] Node Version:  v20.13.1
+[debug] [2024-07-12T06:44:44.160Z] Time:          Fri Jul 12 2024 14:44:44 GMT+0800 (Singapore Standard Time)
+[debug] [2024-07-12T06:44:44.161Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-12T06:44:44.206Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-12T06:44:44.207Z] > authorizing via signed-in user (issacanand21@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\issac\netflix-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-12T06:44:51.410Z] Using project from CLI flag: netflix-clone-139eb
+[debug] [2024-07-12T06:44:51.411Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb [none]
+[debug] [2024-07-12T06:44:51.526Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb 401
+[debug] [2024-07-12T06:44:51.527Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-139eb {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-07-12T06:44:51.527Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-07-12T06:44:51.528Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\issac\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\issac\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project netflix-clone-139eb. Please make sure the project exists and your account has permission to access it.
